@@ -1,0 +1,296 @@
+// ----------------------------------------
+// ! Main css for light bulb
+// ----------------------------------------
+
+@c-answer-blue-title: #0094eb;
+
+
+// ----------------------------------------
+// ! common style
+// ----------------------------------------
+
+.center-block {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.inline-block {
+	display: inline-block;
+}
+body, a {
+	font-family: 'Simsum', serif;
+}
+body {
+	//-webkit-font-smoothing: antialiased;
+}
+a:hover {
+	text-decoration: none;
+}
+
+// ----------------------------------------
+// ! header
+// ----------------------------------------
+header.main.home {
+	height: 651px;
+	background: url(../img/bg.jpg) repeat-x;
+	color: #fff;
+	position: relative;
+
+	&::after {
+		content: " ";
+		position: absolute;
+		width: 54px;
+		height: 30px;
+		background: url(../img/home-assets/arrow.png) no-repeat;
+		background-size: cover;
+
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+}
+
+.customer-action {
+	background: #00C600;
+	padding: 11px 11px 8px 11px;
+	display: inline-block;
+	float: right;
+	margin-top: 50px;
+
+	a {
+		color: #fff;
+		transition: color .35s;
+		font-size: 16px;
+		line-height: 16px;
+
+		&:hover {
+			text-decoration: none;
+			color: #000;
+		}
+	}
+}
+
+@keyframes rotate {
+	0% {
+		transform: rotate(0deg)
+	}
+
+	100% {
+		transform: rotate(30deg);
+	}
+}
+
+section.service {
+	margin-top: 115px;
+
+	.item {
+		.icon {
+			width: 56px;
+			height: 84px;
+			margin: 15px auto;
+		}
+
+		p {
+			font-size: 16px;
+		}
+
+		&:nth-child(3) .icon{
+			width: 68px;
+			padding-top: 12px;
+		}
+
+		&:nth-child(4) .icon{
+			width: 78px;
+			padding-top: 8px;
+		}
+	}
+
+	a img {
+		//transition: .35s;
+	}
+
+	a:hover {
+		img {
+			transform-origin: 50% 50%;
+			//transform: scale(1.2) rotate(15deg);
+			//animation: rotate .35s;
+		}
+	}
+}
+
+section.slogan {
+	margin: 144px 0 0;
+
+	img {
+		width: 556px;
+	}
+}
+
+
+// ----------------------------------------
+// ! primary area
+// ----------------------------------------
+.primary.home {
+	padding: 38px 0 72px;
+}
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+.answer-list {
+
+	.answer-item.active {
+		//animation: fadeIn .35s;
+	}
+
+	.item {
+		border-width: 2px;
+		border-color: rgb( 187, 221, 240 );
+		border-style: dashed;
+		position: relative;
+		padding: 10px 20px;
+		margin-bottom: 24px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		&::before {
+			content: " ";
+			position: absolute;
+			background: url(../img/home-assets/border-decorator.png);
+			width: 24px;
+			height: 10px;
+			top: -10px;
+			left: 48px;
+		}
+
+		div.ask {
+			font-size: 12px;
+			color: #000;
+			font-weight: bold;
+
+			&::before {
+				content: "Q :";
+			}
+		}
+		div.answer {
+			font-size: 12px;
+			color: #888;
+
+			&::before {
+				content: "A :";
+			}
+		}
+
+		div.ask, div.answer {
+			text-indent: 58px;
+			position: relative;
+			padding-top: 12px;
+			line-height: 20px;
+
+			&::before {
+				position: absolute;
+				color: @c-answer-blue-title;
+				font-size: 36px;
+				left: -58px;
+				top: 16px;
+				font-family: Arial, sans-serif;
+				font-weight: 400;
+				line-height: 0;
+			}
+		}
+	}
+}
+
+.answer-people-list {
+
+	&.nav-pills>li+li {
+		margin-left: 0;
+	}
+
+	&.nav-pills>li:nth-child(2n+3) {
+		margin-left: 3.33%;
+	}
+
+	>li {
+		margin: 0 3.33% 3.33% 3.33%;
+		width: 45%;
+
+		a {
+			padding: 0;
+
+			&:hover {
+				background: none !important;
+			}
+
+			img {
+				max-width: 100%;
+			}
+		}
+	}
+
+	.active a {
+		background: none !important;
+
+		img {
+			box-shadow: 0 0 0 1px #fff , 0 0 3px 1px #555;
+		}
+	}
+}
+
+
+// ----------------------------------------
+// ! responsive
+// ----------------------------------------
+
+/* ! device, (tablets, 480px and up) */
+@media (max-width: 1200px) {
+	header.main.home {
+		section:nth-child(1) {
+			padding: 0 10%;
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.answer-people-list {
+
+		&.nav-pills>li:nth-child(2n+3) {
+			margin-left: 0;
+		}
+
+		&.nav-pills>li:nth-child(3n+4) {
+			margin-left: 2.5%;
+		}
+
+		>li {
+			margin: 0 2.5% 2.5% 2.5%;
+			width: 30%;
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	.answer-people-list {
+
+		&.nav-pills>li:nth-child(3n+4) {
+			margin-left: 0;
+		}
+
+		&.nav-pills>li:nth-child(5n+6) {
+			margin-left: 2%;
+		}
+
+		>li {
+			margin: 0 2% 2% 2%;
+			width: 17.6%;
+		}
+	}
+}
+
+@media (min-width: 1200px) {}
