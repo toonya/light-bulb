@@ -24,4 +24,28 @@
 		TweenMax.to($target, .65, {opacity: 1, delay: .2});
 	})
 
+	// ----------------------------------------
+	// ! in modal trigger
+	// ----------------------------------------
+	$(document).on('click', '[data-in-modal-trigger]', function(e){
+		e.preventDefault();
+
+		$(this).closest('.modal').modal('hide');
+	})
+	
+	// ----------------------------------------
+	// ! slide
+	// ----------------------------------------
+	$('.more-information-btn').click(function(e){
+		e.preventDefault();
+
+		$('.more-information').slideToggle();
+
+		$(this).find('.fa').toggleClass('fa-chevron-down').toggleClass('fa-chevron-up');
+	})
+	
+	$(document).one('click.removeHide', '.more-information-btn', function(e){
+		$('.more-information').removeClass('hide');
+	})
+
 })(jQuery)

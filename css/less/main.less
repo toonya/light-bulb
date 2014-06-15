@@ -21,7 +21,6 @@ body, a {
 	font-family: 'Simsum', serif;
 }
 body {
-	//-webkit-font-smoothing: antialiased;
 }
 a:hover {
 	text-decoration: none;
@@ -243,6 +242,85 @@ section.slogan {
 	}
 }
 
+// ----------------------------------------
+// ! modal
+// ----------------------------------------
+
+.no-bg.modal {
+	* {
+		-webkit-font-smoothing: subpixel-antialiased;
+	}
+	
+	.btn-large {
+		min-width: 92px;
+	}
+
+	label {
+		font-weight: normal;
+	}
+	
+	.btn-success {
+		background-color: #5cb85c;
+		border-color: #4cae4c;
+		background-image: none;
+
+		&:hover {
+			background-color: #47a447;
+			border-color: #398439;
+		}
+	}
+
+	ul {
+		list-style: none;
+	}
+}
+
+.aw-login-box {
+	* {
+		-webkit-font-smoothing: subpixel-antialiased;
+	}
+	
+	.btn-large {
+		min-width: 92px;
+	}
+
+	label {
+		font-weight: normal;
+	}
+	
+	.btn-success {
+		background-color: #5cb85c;
+		border-color: #4cae4c;
+		background-image: none;
+
+		&:hover {
+			background-color: #47a447;
+			border-color: #398439;
+		}
+	}
+
+	ul, ol {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+
+	.aw-mod>div {
+		margin: 0 auto;
+	}
+}
+
+.no-bg.modal, .no-bg.modal a {
+	font-family: "Helvetica Neue",Helvetica,Arial,'Microsoft YaHei',sans-serif;
+}
+
+.no-bg {
+	.modal-content {
+		background: none;
+		border: none;
+		box-shadow: none;
+	}
+}
 
 // ----------------------------------------
 // ! responsive

@@ -25,7 +25,6 @@ header.main.home::after {
   width: 54px;
   height: 30px;
   background: url(../img/home-assets/arrow.png) no-repeat;
-  -webkit-background-size: cover;
   background-size: cover;
   bottom: 0;
   left: 50%;
@@ -64,12 +63,10 @@ header.main.home::after {
 @keyframes rotate {
   0% {
     -webkit-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
     -webkit-transform: rotate(30deg);
-    -ms-transform: rotate(30deg);
     transform: rotate(30deg);
   }
 }
@@ -198,8 +195,64 @@ section.slogan img {
   background: none !important;
 }
 .answer-people-list .active a img {
-  -webkit-box-shadow: 0 0 0 1px #fff , 0 0 3px 1px #555;
   box-shadow: 0 0 0 1px #fff , 0 0 3px 1px #555;
+}
+.no-bg.modal * {
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+.no-bg.modal .btn-large {
+  min-width: 92px;
+}
+.no-bg.modal label {
+  font-weight: normal;
+}
+.no-bg.modal .btn-success {
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+  background-image: none;
+}
+.no-bg.modal .btn-success:hover {
+  background-color: #47a447;
+  border-color: #398439;
+}
+.no-bg.modal ul {
+  list-style: none;
+}
+.aw-login-box * {
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+.aw-login-box .btn-large {
+  min-width: 92px;
+}
+.aw-login-box label {
+  font-weight: normal;
+}
+.aw-login-box .btn-success {
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+  background-image: none;
+}
+.aw-login-box .btn-success:hover {
+  background-color: #47a447;
+  border-color: #398439;
+}
+.aw-login-box ul,
+.aw-login-box ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.aw-login-box .aw-mod > div {
+  margin: 0 auto;
+}
+.no-bg.modal,
+.no-bg.modal a {
+  font-family: "Helvetica Neue", Helvetica, Arial, 'Microsoft YaHei', sans-serif;
+}
+.no-bg .modal-content {
+  background: none;
+  border: none;
+  box-shadow: none;
 }
 /* ! device, (tablets, 480px and up) */
 @media (max-width: 1200px) {
