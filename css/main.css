@@ -14,7 +14,7 @@ a:hover {
   text-decoration: none;
 }
 header.main.home {
-  height: 651px;
+  height: 360px;
   background: url(../img/bg.jpg) repeat-x;
   color: #fff;
   position: relative;
@@ -71,7 +71,10 @@ header.main.home::after {
   }
 }
 section.service {
-  margin-top: 115px;
+  margin-top: 0px;
+}
+section.service img {
+  width: 70%;
 }
 section.service .item .icon {
   width: 56px;
@@ -98,7 +101,7 @@ section.slogan {
   margin: 144px 0 0;
 }
 section.slogan img {
-  width: 556px;
+  width: 450px;
 }
 .primary.home {
   padding: 38px 0 72px;
