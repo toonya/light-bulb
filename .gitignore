@@ -218,3 +218,20 @@ pip-log.txt
 *.codekit
 config.codekit
 .codekit-cache/
+
+# grunt
+node_modules/
+package.json
+Gruntfile.js
+bower.json
+.tmp/
+bower_components/
+.editorconfig
+.bowerrc
+.jshintrc
+.travis.yml
+node_modules
+dist
+.tmp
+.sass-cache
+bower_components
