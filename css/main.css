@@ -1,3 +1,6 @@
+.container {
+  width:800px;
+}
 .center-block {
   display: block;
   margin-left: auto;
@@ -15,7 +18,7 @@ a:hover {
 }
 header.main.home {
   height: 360px;
-  background: url(../img/bg.jpg) repeat-x;
+  background: url(../img/bg.jpg) repeat-x 0px;
   color: #fff;
   position: relative;
 }
@@ -43,7 +46,7 @@ header.main.home::after {
   color: #fff;
   -webkit-transition: color .35s;
   transition: color .35s;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 16px;
 }
 .customer-action a:hover {
@@ -78,11 +81,11 @@ section.service img {
 }
 section.service .item .icon {
   width: 56px;
-  height: 84px;
+  height: 54px;
   margin: 15px auto;
 }
 section.service .item p {
-  font-size: 16px;
+  font-size: 14px;
 }
 section.service .item:nth-child(3) .icon {
   width: 68px;
@@ -98,10 +101,10 @@ section.service a:hover img {
   transform-origin: 50% 50%;
 }
 section.slogan {
-  margin: 144px 0 0;
+  margin: 65px 0 0;
 }
 section.slogan img {
-  width: 450px;
+  width: 350px;
 }
 .primary.home {
   padding: 38px 0 72px;
@@ -122,30 +125,36 @@ section.slogan img {
     opacity: 1;
   }
 }
+.answer-item {
+  width: 450px;
+  background: url(../img/home-assets/homepage-dialog-box-bg.png) no-repeat;
+}
 .answer-list .item {
-  border-width: 2px;
+  height: 400px;
+  /*border-width: 2px;
   border-color: #bbddf0;
-  border-style: dashed;
+  border-style: dashed;*/
   position: relative;
-  padding: 10px 20px;
+  padding: 5px 35px 5px 20px;
   margin-bottom: 24px;
 }
 .answer-list .item:last-child {
   margin-bottom: 0;
 }
-.answer-list .item::before {
+/*.answer-list .item::before {
   content: " ";
   position: absolute;
   background: url(../img/home-assets/border-decorator.png);
-  width: 24px;
-  height: 10px;
-  top: -10px;
-  left: 48px;
-}
-.answer-list .item div.ask {
-  font-size: 12px;
-  color: #000;
-  font-weight: bold;
+  width: 10px;
+  height: 24px;
+  top: 10px;
+  left: 432px;
+}*/
+.answer-list .item div.ask  {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #666;
+  border-bottom: 1px dashed lightblue;
 }
 .answer-list .item div.ask::before {
   content: "Q :";
@@ -159,17 +168,17 @@ section.slogan img {
 }
 .answer-list .item div.ask,
 .answer-list .item div.answer {
-  text-indent: 58px;
+  text-indent: 50px;
   position: relative;
   padding-top: 12px;
-  line-height: 20px;
+  line-height: 30px;
 }
 .answer-list .item div.ask::before,
 .answer-list .item div.answer::before {
   position: absolute;
   color: #0094eb;
-  font-size: 36px;
-  left: -58px;
+  font-size: 30px;
+  left: -48px;
   top: 16px;
   font-family: Arial, sans-serif;
   font-weight: 400;
@@ -192,6 +201,10 @@ section.slogan img {
   background: none !important;
 }
 .answer-people-list > li a img {
+  width:67px;
+  height: 67px;
+  border-radius: 67px;
+  border:3px solid white;
   max-width: 100%;
 }
 .answer-people-list .active a {
@@ -279,11 +292,15 @@ section.slogan img {
   .answer-people-list.nav-pills > li:nth-child(3n+4) {
     margin-left: 0;
   }
-  .answer-people-list.nav-pills > li:nth-child(5n+6) {
+  .answer-people-list.nav-pills > li:nth-child(4n+5) {
     margin-left: 2%;
   }
   .answer-people-list > li {
-    margin: 0 2% 2% 2%;
-    width: 17.6%;
+    margin: 0 2.4% 5% 2.4%;
+    width: 22%;
   }
+}
+.logo img {
+  width: 70%;
+  height: 70%;
 }
