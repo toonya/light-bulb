@@ -27,11 +27,7 @@
 	// ----------------------------------------
 	// ! in modal trigger
 	// ----------------------------------------
-	$(document).on('click', '[data-in-modal-trigger]', function(e){
-		e.preventDefault();
 
-		$(this).closest('.modal').modal('hide');
-	})
 	
 	// ----------------------------------------
 	// ! slide

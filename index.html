@@ -19,14 +19,14 @@
     </head>
     <body>
         <!-- Modal for user Login -->
-        <div class="modal fade no-bg" id="userLogin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal fade no-bg" id="userLogin" role="dialog">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-body">
                         <div class="aw-login-box">
                             <div class="aw-mod">
                                 <div class="aw-mod-head">
-                                    <a href="" data-in-modal-trigger data-toggle="modal" data-target="#userRegist" class="b-new-user pull-right">注册新用户</a>
+                                    <a href="" data-in-modal-trigger data-dismiss="modal" data-toggle="modal" data-target="#userRegist" class="b-new-user pull-right">注册新用户</a>
                                     <i class="fa fa-user"></i>
                                     <span class="hidden-xs">登录</span>
                                 </div>
@@ -66,7 +66,7 @@
         </div>
 
         <!-- Modal for user regist -->
-        <div class="modal fade no-bg" id="userRegist" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal fade no-bg" id="userRegist" role="dialog">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-body">
@@ -125,7 +125,7 @@
                                     </li>
                                     <li class="last">
                                         <label><input type="checkbox" checked="checked" value="agree" name="agreement_chk"> 我同意</label> <a href="javascript:;" onclick="$('.aw-regiter-agreement').removeClass('hide');">用户协议</a>
-                                        <a href="" data-in-modal-trigger data-toggle="modal" data-target="#userLogin" class="pull-right">已有账号?</a>
+                                        <a href="" data-in-modal-trigger data-dismiss="modal" data-toggle="modal" data-target="#userLogin" class="pull-right">已有账号?</a>
                                         <div class="aw-regiter-agreement hide">
                                             <div class="aw-register-agreement-txt" id="register_agreement">当您申请用户时，表示您已经同意遵守本规章。<br>
                                                 欢迎您加入本站点参与交流和讨论，本站点为社区，为维护网上公共秩序和社会稳定，请您自觉遵守以下条款：<br>
@@ -526,7 +526,5 @@
 
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
-
-        <script src="http://localhost:1337/livereload.js"></script>
     </body>
 </html>
